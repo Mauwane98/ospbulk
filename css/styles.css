@@ -17,7 +17,7 @@ a {
 
 /* Header */
 header {
-    background-color: #000;
+    background-color: #ffffff;
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -39,6 +39,11 @@ header {
     color: #fff;
 }
 
+.logo img {
+    max-height: 70px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -52,7 +57,7 @@ header {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #000000;
     padding: 10px 15px;
     border-radius: 4px;
     font-weight: 500;
@@ -62,7 +67,7 @@ header {
 
 .nav-links a:hover {
     background-color: #fff;
-    color: #000;
+    color: #efac05;
     transition: 0.3s;
 }
 
@@ -79,7 +84,7 @@ header {
 .menu-toggle .bar {
     width: 100%;
     height: 4px;
-    background-color: #fff;
+    background-color: #060606;
     border-radius: 5px;
 }
 
@@ -92,7 +97,7 @@ header {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #000;
+        background-color: #ffffff;
         position: absolute;
         top: 60px;
         right: 0;
