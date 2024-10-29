@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Confirmation - OSP Bulk</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="confirmation">
+        <h2>Thank You for Registering!</h2>
+        <div id="registrationDetails"></div>
+        <a href="index.html">Return to Home</a>
+    </section>
+    <script>
+        // Fetch the latest registration data and display it
+        fetch("http://localhost:3000/confirmation")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("registrationDetails").innerHTML = `
+                    <p><strong>Name:</strong> ${data.fullName}</p>
+                    <p><strong>Email:</strong> ${data.email}</p>
+                    <p><strong>Phone:</strong> ${data.phone}</p>
+                    <p><strong>Company:</strong> ${data.company}</p>
+                    <p><strong>Position:</strong> ${data.position}</p>
+                    <p><strong>Attendance Type:</strong> ${data.attendanceType}</p>
+                    <p><strong>Comments:</strong> ${data.comments || "N/A"}</p>
+                `;
+            })
+            .catch(error => console.error("Error fetching confirmation:", error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OSP Bulk Pty Ltd - Conference Registration">
+    <title>Conference Registration - OSP Bulk Pty Ltd</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="OSP Bulk Logo" />
+                </a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="registration">
+        <h2>Conference Registration</h2>
+        <form id="registrationForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <input type="text" id="company" placeholder="Company" required>
+            <input type="text" id="position" placeholder="Position" required>
+            <select id="attendanceType" required>
+                <option value="" disabled selected>Select Attendance Type</option>
+                <option value="online">Online</option>
+                <option value="in-person">In-Person</option>
+            </select>
+            <textarea id="comments" placeholder="Additional Comments"></textarea>
+            <button type="submit">Submit Registration</button>
+        </form>        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 OSP Bulk (Pty) Ltd | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

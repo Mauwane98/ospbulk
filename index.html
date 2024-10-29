@@ -7,6 +7,7 @@
     <title>OSP Bulk Pty Ltd</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
    <!-- Header Section -->
@@ -17,7 +18,7 @@
                 <img src="images/logo.png" alt="OSP Bulk Logo" />
             </a>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="products.html">Products</a></li>
@@ -31,7 +32,6 @@
         </div>
     </nav>
 </header>
-
 
     <!-- Hero Section with Animated Text -->
     <section class="hero">
@@ -67,6 +67,16 @@
             </div>
         </div>
     </section>
+
+   <!-- Popup Structure -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="closePopup" class="close-btn">&times;</span>
+        <h2>Upcoming Conference</h2>
+        <p>Register now for the OSP Conference!</p>
+        <button id="registerBtn" class="btn">Register Now</button>
+    </div>
+</div>
 
     <!-- Footer -->
     <footer>
